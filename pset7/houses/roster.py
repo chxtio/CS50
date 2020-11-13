@@ -15,7 +15,8 @@ def main():
     db = con.cursor()
 
     # Query database for all students in house
-    roster = db.execute('SELECT first, middle, last, birth FROM students WHERE house = (?) ORDER BY last, first', (house,))
+    db.execute('SELECT first, middle, last, birth FROM students WHERE house = (?) ORDER BY last, first', (house,))
+    roster = db.fetchall()
 
     # Print out students' full name and birth year
     for student in roster:
