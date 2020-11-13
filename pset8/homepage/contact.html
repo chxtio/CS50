@@ -1,0 +1,39 @@
+<i!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>contact</title>
+    <meta charset="UTF-8">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h3>Contact Me</h3>
+    <form onsubmit="greet(); return false;">
+        <p><a href="index.html">Back to home</a></p>
+        <div class="form-control">
+            <label for="myName">* Name:</label>
+            <input type="text" name="myName" id="myName" placeholder="Name" required>
+        </div>
+        <div class="form-control">
+            <label for="myEmail">* Email:</label>
+            <input type="email" name="myEmail" id="myEmail" placeholder="Email" required>
+        </div>
+        <div class="form-control">
+            <p>* Comments:</p>
+            <textarea name="myComments" id="myComments" rows="6" columns="20" placeholder="Enter your comments here..."></textarea>
+        </div>
+        <div class="form-control">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+        <p>Required fields marked with an asterisk (*)</p>
+    </form>
+    <div id="result">
+        Thank you!
+    </div>
+    <script>
+        function greet() {
+            let name = document.querySelector('#myName').value;
+            document.querySelector('#result').innerHTML = 'Thanks, ' + name + '!';
+        }
+    </script>
+</body>
+</html>

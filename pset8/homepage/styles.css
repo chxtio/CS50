@@ -1,0 +1,44 @@
+body {
+    color: white;
+    background: rgb(2,0,36);
+    background-image:
+ linear-gradient(to bottom, rgba(2,0,36,0.7), rgba(2,21,58,0.7), rgba(0,212,255,0.7));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+form {
+    background-color: #186160;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+}
+.form-control {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 20px;
+
+}
+label, textarea {
+    display: block;
+    margin-bottom: 5px;
+}
+input {
+    width: 75%;
+    padding: 5px;
+}
+textarea {
+    margin: 0 auto;
+    padding: 10px;
+}
+button {
+    width: 40%;
+    color: green;
+    padding: 10px;
+}
+a {
+    color: red;
+}
